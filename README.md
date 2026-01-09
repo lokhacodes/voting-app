@@ -90,9 +90,9 @@ Books collection with fields:
 ![alt text](image-3.png)
 
 ## Things I try to do in this project
-Backend CRUD
-Backend Router
-CORS Policy
-MongoDB operations
-Frontend CRUD 
-Frontend Router 
+-Backend CRUD
+-Backend Router
+-CORS Policy
+-MongoDB operations
+-Frontend CRUD 
+-Frontend Router 
