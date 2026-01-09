@@ -13,7 +13,7 @@ const ShowBook = () => {
     const fetchBook = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5555/books/${id}`
+          `http://localhost:5000/books/${id}`
         );
         setBook(response.data);
       } catch (error) {

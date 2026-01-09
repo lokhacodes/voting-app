@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('http://localhost:5555/books');
+        const response = await axios.get('http://localhost:5000/books');
         setBooks(response.data.data);
       } catch (error) {
         console.error(error);

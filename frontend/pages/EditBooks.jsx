@@ -17,10 +17,10 @@ const EditBook = () => {
 
   useEffect(() => {
     const fetchBook = async () => {
-      try {
-        const response = await axios.get(
-          `http://localhost:5555/books/${id}`
-        );
+    try {
+      const response = await axios.get(
+        `http://localhost:5000/books/${id}`
+      );
         setTitle(response.data.title);
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear);
@@ -40,7 +40,7 @@ const EditBook = () => {
     setLoading(true);
 
     try {
-      await axios.put(`http://localhost:5555/books/${id}`, data);
+      await axios.put(`http://localhost:5000/books/${id}`, data);
       enqueueSnackbar('Book edited successfully', { variant: 'success' });
       navigate('/');
     } catch (error) {
